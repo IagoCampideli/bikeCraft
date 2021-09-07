@@ -1,4 +1,5 @@
-div {
-  background-color: #fff;
-  background: #fff;
+* {
+  text-transform: capitalize;
+  background-color: #fec63e;
+  color: black;
 }

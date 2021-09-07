@@ -6,22 +6,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,              initial-scale=1.0">
     <title>Bike Craft</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <header>
+
+
+    </header>
     <img src="img/bikcraft.svg" alt="Bikecraft">
     <h1>Bikecraft - Bicicletas Personalizadas</h1>
 
     <h2>Nossos Produtos</h2>
+    <div>
+        <ul>
+            <li> <a href="Passeio.html">Passeio</a></li>
+            <li> <a href="Esporte.html">Esporte</a></li>
+            <li> <a href="Retro.html">Retrô</a></li>
 
-    <ul>
-        <li> <a href="Passeio.html">Passeio</a></li>
-        <li> <a href="Esporte.html">Esporte</a></li>
-        <li> <a href="Retro.html">Retrô</a></li>
+        </ul>
+    </div>
+    <form action="enviar.php" method="POST" name="form">
+        <div>
+            <label for="nome">Nome *</label>
+            <input type="text" name="nome" id="nome" required>
+        </div>
+        <div>
+            <label for="email">E-mail *</label>
+            <input type="text" name="email" id="email" required>
+        </div>
+        <div>
+            <label for="mensagem">Mensagem</label>
+            <textarea name="mensagem" id="mensagem" cols="15" rows="10"></textarea>
+            <button type="subimit">Enviar</button>
+        </div>
 
-    </ul>
+        <div>
+            <p>Escolha uma Bicicleta</p>
+            <label for="retro"><input id="retro" type="checkbox" value="retro">Retro</label>
+            <label for="passeio"><input id="passeio" type="checkbox" value="retro">Retro</label>
+            <label for="esporte"><input id="esporte" type="checkbox" value="esporte">Esporte</label>
+        </div>
 
-
+    </form>
     </p>
     <table>
         <tr>
@@ -42,6 +69,10 @@
         </tr>
 
     </table>
+
+    <footer>
+
+    </footer>
 </body>
 
 </html>
